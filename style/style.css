@@ -1,0 +1,59 @@
+@import url('./base.css');
+
+/* ================ PAGE LOGIN ================ */
+
+.login-container {
+    margin: 0;
+
+    width: 100vw;
+    height: 100vh;
+}
+
+    .login-container .card {
+        margin-bottom: 50px;
+    }
+
+    .login-container form {
+        margin-top: 50px;
+    }
+
+        .form-input input {
+            border: 2px solid #F3F8FF;
+            border-radius: 5px;
+            padding: 10px;
+            padding-left: 40px;
+        }
+
+        .form-input i {
+            color: var(--bg-blue);
+            
+            position: absolute;
+            left: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+
+    /* ------ Vue Transition ------ */
+
+    .v-enter-active,
+    .v-leave-active {
+        transition: opacity 0.25s ease;
+    }
+
+    .v-enter-from,
+    .v-leave-to {
+        opacity: 0;
+    }
+
+    /* ---- End Vue Transition ---- */
+
+/* ===============END PAGE LOGIN ============== */
+
+@media only screen and (max-width: 480px) {
+   
+    .h2 {
+        font-size: 24px;
+    }
+
+}
